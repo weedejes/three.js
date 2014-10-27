@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #000;
+				color: #000;
+				margin: 0px;
+				overflow: hidden;
+			}
+
+			#info {
+				text-align: center;
+				padding: 10px;
+				z-index: 10;
+				width: 100%;
+				position: absolute;
+			}
+
+			a {
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			#stats { position: absolute; top:0; left: 0 }
+			#stats #fps { background: transparent !important }
+			#stats #fps #fpsText { color: #aaa !important }
+			#stats #fps #fpsGraph { display: none }
+		</style>
+<title>Hexagon AI</title>
+</head>
+<body>
+	<div id="container">
+		<div id="console" style="color:white;position:absolute;left:50%;font-family:monospace">x</div>
+	</div>
+
+	<script type="text/javascript" src="../build/three.js"></script>
+	<script type="text/javascript" src="../utils/underscore-min.js"></script>
+	<script type="text/javascript" src="js/loaders/ColladaLoader.js"></script>
+	<script type="text/javascript" src="js/libs/stats.min.js"></script>
+	<script type="text/javascript" src="js/hexagon/utils.js"></script>
+	<script type="text/javascript" src="js/hexagon/hexagon_math.js"></script>
+	<script type="text/javascript" src="js/hexagon/objectBuilder.js"></script>
+	<script type="text/javascript" src="js/hexagon/plate.js"></script>
+	<script type="text/javascript" src="js/hexagon/main.js"></script>
+	
+
+	
+</body>
+</html>
